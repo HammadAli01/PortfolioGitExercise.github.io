@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        body{
+            overflow-x: hidden;
+            background: #000000;  
+        }
+        .menu-icon i{
+            color: #fff;
+        }
+        .navbar h2{
+            color: #fff;
+            font-weight: 900;
+    font-size: 24px;
+    text-transform: uppercase;
+        }
+        .navbar a{
+            font-size: 16px;
+            color: #fff;
+    font-weight: 400;
+    text-decoration:none;
+        }
+        .navrow{
+           height: 56px;
+           background: #000000;
+        }
+        .nav-links{
+           display: flex;
+            margin-right: 256px;
+        }
+        .nav-links a{
+            margin-left: 20%;
+        }
+        #menuToggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+@media screen and (max-width: 670px) {
+   .nav-links{
+    display: none;
+    position: absolute;
+    margin-left: 80%;
+    width: 25%;
+    margin-top: 170px;
+   }
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 0;
+        margin-left: 95%;
+        line-height: 65px;
+        cursor: pointer;
+    }
+    #menuToggle:checked ~ .nav-links {
+        background: #000000;
+        display: grid;
+      }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+    .home-divs,.home-second-divs,.about-col{
+        padding-left: 20% !important;
+       
+    }
+    .education h1{
+        padding-left: 25% !important;
+        margin-bottom: 5%;
+    }
+    .skills h2{
+        padding-left: 38% !important;
+    }
+    .contact h2{
+        padding-left: 24% !important;
+    }
+    .education-box{
+        width: 80%;
+        margin-left: 2%;
+        margin-bottom: 10%;
+    }
+.contact-col{
+    padding-left: 16% !important;
+}
+input[type=submit]{
+    margin-left: 45% !important;
+    -ms-transform: translateX(-45%) !important;
+    transform: translateX(-45%) !important;
+}
+}
+.skill-col{
+    margin-top: 5%;
+}
+.home{
+    
+    margin-top: -0.5%;
+    min-width: 100.9%;
+    background: #000000;
+}
+.home-col{
+    
+margin-left:50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background: #000000;
+   z-index: 20;
+   color: black;
+}
+.home-divs{
+    background: #000000;
+    padding-top: 10%;
+   padding-left: 10%;
+    padding-bottom: 10%;
+    color: white;
+}
+.home-divs h1,span{
+    font-weight: 800;
+    
+    font-size: 55px;
+    line-height: 1.2;
+}
+.home-divs h6{
+    color: #ffbd39;
+}
+.home-divs h1 span{
+    color: #ffbd39;
+}
+.home-second-divs{
+    background: #000000;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-bottom: 6%;
+    color: white;
+}
+.about-me{
+    
+    min-width: 100.9%;
+    background: #000000;
+}
+.about-col{
+    margin-top: 10px;
+    background: #000000;
+padding-left: 20px;
+border:1px solid #000000;
+}
+.about-col h1{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    font-size: 7vw;
+    color: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+    font-weight: 900;
+}
+.about-col h2{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: white;
+}
+.about-col p{
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999999;
+    padding-right: 80px;
+}
+.span-2{
+    color: #999999;
+}
+.about-col ul{
+    padding-left: 0% !important;
+    color: #fff;
+}
+.about-col ul li{
+    margin-bottom: 40px;
+    
+}
+.about-col ul li span{
+    font-size: 16px;
+}
+.education{
+margin-bottom: 5%;
+margin-top: 5%;
+padding-top: 20px;
+}
+.education h1,.skills h2{
+    font-size: 50px;
+    font-weight: 700;
+   padding-left: 42%;
+ margin-bottom: 20px;
+    color:#fff;
+}
+.skills h2,.contact h2{
+    font-size: 50px;
+    font-weight: 700;
+   padding-left: 45%;
+ margin-bottom: 20px;
+    color:#fff;
+}
+.contact h2{
+    font-size: 50px;
+    font-weight: 700;
+   padding-left: 41%;
+ margin-bottom: 20px;
+    color:#fff;
+}
+.education .education-box{
+    background-color: #999999;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    margin-top: 1%;
+}
+.education-box h3{
+    font-weight: 900;
+    font-size: 26px;
+    color: #ffbd39;
+}
+.education-box h5{
+    font-size: 26px;
+    color: #fff;
+}
+.education-box span{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #999999;
+}
+.education-box p{
+    margin-top: 1.5rem !important;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999999;
+}
+.skills img{
+    height: 80px;
+    width: 60px;
+    margin-left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.contact{
+    margin-top: 10%;
+}
+.contact-col{
+    padding: 3rem;
+    background: #f8f9fa !important;
+}
+.contact-col input{
+    padding: 10px;
+    border-radius: 5px;
+    height: 52px;
+    background: #fff !important;
+    color: #000000 !important;
+    border:  1px solid #ced4da;
+    font-size: 15px;
+    width: 100%;
+}
+input[type=submit]{
+    width: 30%;
+    box-shadow: 0px 24px 36px -11px rgb(0 0 0 / 9%);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    background: #ffbd39 !important;
+    margin-left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border: 1px solid #ffbd39 !important;
+    color: #000000 !important;
+    cursor: pointer;
+}
+.custominput{
+    height: 100px !important;
+}
+.contact h3{
+
+}
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row  navrow">
+          <div class="col-md-12 ">
+            <div class="navbar">
+                <h2 > Hammad</h2>
+                <input type="checkbox" id="menuToggle">
+                <label for="menuToggle" class="menu-icon"><i class="fa fa-bars"></i></label>
+                <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#About">About</a>
+                <a href="#Contact">Contact</a>
+                <a href="#signin">signin</a>
+                <a href="#Singup">Singup</a>
+            </div>
+          </div>
+            </div>
+        </div>
+        <div class="row  justify-content-center home">
+            <div class="col-md-6 col-sm-4 home-divs">
+             <h6>Hello!</h6>
+             <h1>I'm a junior <span>software developer</span> based in <br>Islamabad</h1>
+            </div>
+            <div class="col-md-5 col-sm-6 home-second-divs">
+                <img src="profile.png" alt="Home profile"></div>
+        </div>
+        <div class="w-100"></div>
+        <div class="row about-me justify-content-center">
+            <div class="col-md-4 col-sm-6 about-col">
+                <img src="profile.png" alt="about profile">
+            </div>
+            <div class="col-md-6 col-sm-4 about-col">
+                <!-- <h1>ABOUT</h1> -->
+            <h2> About Me</h2>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <ul>
+                <li class="d-flex flex-row">
+                    <span class="col-3">Name:</span>
+                    <span class="col-6 span-2">Hammad Ali</span>
+                </li>
+                <li class="d-flex">
+                    <span class="col-3">Date of birth:</span>
+                    <span class="col-3 span-2">15-03-2001</span>
+                </li>
+                <li class="d-flex">
+                    <span class="col-3">Address:</span>
+                    <span class="col-9 span-2">Banigala Islamabad Pakistan</span>
+                </li>
+                <li class="d-flex">
+                    <span class="col-3">Email:</span>
+                    <span class="col-6 span-2">hammadalibu@gmail.com</span>
+                </li>
+                <li class="d-flex">
+                    <span class="col-3">Phone: </span>
+                    <span class="col-6 span-2">0304-5360339</span>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="row education justify-content-center">
+            <h1 class="align-self-center">Education</h1>
+        <div class="col-md-4 col-sm-6 education-box rounded-4">
+            <h3>2017-2018</h3>
+            <h5>Diploma in Computer</h5>
+            <span>CAMBRIDGE UNIVERSITY</span>
+            <p>
+                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+            </p>
+        </div>
+        <div class="col-md-4 offset-md-1 col-sm-2 education-box rounded-4">
+            <h3>2017-2018</h3>
+            <h5>Diploma in Computer</h5>
+            <span>CAMBRIDGE UNIVERSITY</span>
+            <p>
+                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+            </p>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-md-4 col-sm-4 education-box rounded-4">
+            <h3>2017-2018</h3>
+            <h5>Diploma in Computer</h5>
+            <span>CAMBRIDGE UNIVERSITY</span>
+            <p>
+                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+            </p>
+        </div>
+        <div class="col-md-4 col-sm-4 offset-md-1 offset-md-0 education-box rounded-4">
+            <h3>2017-2018</h3>
+            <h5>Diploma in Computer</h5>
+            <span>CAMBRIDGE UNIVERSITY</span>
+            <p>
+                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+            </p>
+        </div>
+        </div>
+        <div class="row skills justify-content-center">
+            <h2> Skills</h2>
+           <div class="col-md-2 col-sm-6  skill-col">
+                <img src="htmlicon.png" alt="about profile">
+            </div>
+            <div class="col-md-2 col-sm-6 skill-col">
+                <img src="cssicon.png" alt="about profile">
+            </div>
+            <div class="col-md-2 col-sm-6 skill-col">
+                <img src="jsicon.png" alt="about profile">
+            </div>
+            <div class="col-md-2 col-sm-6  skill-col">
+                <img src="reacticon.png" alt="about profile">
+            </div>
+            <div class="w-100"></div>
+            <div class="col-md-2 col-sm-6 skill-col">
+                <img src="bootstrapicon.jpg" alt="about profile">
+            </div>
+            <div class="col-md-2 col-sm-6 skill-col">
+                <img src="nodeicon.png" alt="about profile">
+            </div>            
+        </div>
+        <div class="row contact justify-content-center">
+            <h2>Contact Us</h2>
+        
+        <div class="col-md-6 col-sm-8 bg-light contact-col">
+            <form >
+                
+                <input type="text" placeholder="Enter Your name" ><br><br>
+                <input type="email" placeholder="Email" ><br><br>
+                <input type="text" placeholder="Subject" ><br><br>
+                <input class="custominput" type="text" placeholder="Message" ><br><br>
+                <input type="submit" value="Submit">
+              </form>
+        </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
